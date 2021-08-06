@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>Patricia Fonseca</title>
+  </head>
+  <body>
+    <header>
+      <div><img class= "logo" src="./images/logo.png" alt"Logo Pati"></div>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/Psilva-f"
+            ><i class="fab fa-github fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="mailto:patricia.fonseca.sf@gmail.com"
+            ><i class="far fa-envelope fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://wa.me/11986681114"
+            ><i class="fab fa-whatsapp fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            target="_black"
+            href="https://www.linkedin.com/in/patricia-silva-fonseca/"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="container">
+        <div class="name">
+          <h1>Patricia Fonseca</h1>
+          <h2>Front-End Developer</h2>
+        </div>
+        <div onclick="displayAbout()" id="arrow">
+          <i id="animation" class="fas fa-sort-down"></i>
+        </div>
+        <div style="display: none" id="about">
+          <p>
+            Profissional em transição de carreira, estou buscando minha primeira
+            oportunidade na área de tecnólogia. Sou uma pessoa comunicativa e
+            aprendo rápido, possuo conhecimento em Metodologia Ágil, Kanban e
+            Scrum.
+          </p>
+        </div>
+        <div class="form">
+          <div>
+            <p>Deixe seu contato!</p>
+          </div>
+          <form action="">
+            <input type="email" placeholder="seu melhor email :)" />
+            <button>enviar!</button>
+          </form>
+        </div>
+      </selection>
+    </main>
+    <script>
+      function displayAbout() {
+        const arrow = document.getElementById('animation');
+        arrow.classList.toggle('rotate');
+        const display = document.getElementById('about');
+        display.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
