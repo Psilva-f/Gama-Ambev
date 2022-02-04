@@ -1,4 +1,4 @@
 # Curso Front-End
 
 Bootcamp Gama-Ambev
-Linguaguem: JavaScript (Básico), JavaScript (Intermediário)
+Lógica de Programação, JavaScript (Básico), JavaScript (Intermediário)
